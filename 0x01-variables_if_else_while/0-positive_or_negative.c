@@ -16,9 +16,9 @@ int main(void)
 	printf("%d ", n);
 	if(n>0)
                printf("is positive") ;
-         Else if( n==0 )
+         else if( n==0 )
                  printf("is zero"); 
-             Else 
+	else 
                   printf("is zero");
 	return (0);
 }
