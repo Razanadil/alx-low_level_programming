@@ -2,31 +2,36 @@
 
 /**
  * main - Entry point
- * Description: prints combination of three digits
+ * Description: prints combinations of three digits
  * Return: 0 (success)
  */
 int main(void)
 {
-	int n1,n2,n3;
+	int num1, num2, num3;
 
-	for (n1 = 48; n1 <= 56; n1++)
+	num1 = 48;
+	while (num1 <= 55)
 	{
-		for (n2 = n1 + 1; n2 <= 57; n2++)
+		num2 = num1 + 1;
+		while (num2 <= 56)
 		{
-
-for (n3 = n2+1; n3 <= 57; n3++ )
-			putchar((char)n1);
-			putchar((char)n2);
-putchar((char)n3);
-			if (n1 != 56)
+			num3 = num2 + 1;
+			while (num3 <= 57)
 			{
-				putchar(',');
-				putchar(' ');
+				putchar((char)num1);
+				putchar((char)num2);
+				putchar((char)num3);
+				if (num1 != 55)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+				num3++;
 			}
-		
+			num2++;
+		}
+		num1++;
 	}
+	putchar('\n');
+	return (0);
 }
-		putchar('\n');
-		return (0);
-}
-
