@@ -1,1 +1,1 @@
-My new C readme
+ learning C if ,while ,for 
