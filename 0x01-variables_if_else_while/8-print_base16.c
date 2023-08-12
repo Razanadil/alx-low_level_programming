@@ -1,7 +1,7 @@
 #include<stdio.h>
  /**
  * main - Entry point
- * Description: print numbers of base 16   
+ * Description: Print all number of base 16
  * Return: o (success)
  */
 int main(void)
