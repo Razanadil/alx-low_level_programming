@@ -19,37 +19,8 @@ int main(void)
 		printf("greater than 5\n");
 	else if (lastDigit == 0)
 		printf("0\n");
-	else
+	else if (n < 6 || n != 0 )              
 		printf("less than 6 but not 0\n");
 	return (0);
 }
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
