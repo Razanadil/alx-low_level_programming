@@ -1,7 +1,7 @@
 #include<stdio.h>
 /**
  * main - Entry point
- * Description: print digits  from 0 to 9 
+ * Description: print digits from 0 to 9 
  * Return: o (success)
  */
 int main(void)
@@ -9,8 +9,7 @@ int main(void)
 int n;
 for (n = 48; n <= 57; n++)
 putchar((char)n);
-putchar('\n'); 
-
+putchar('\n');
 return (0);
 }
 
