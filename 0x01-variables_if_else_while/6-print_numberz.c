@@ -1,8 +1,8 @@
 #include<stdio.h>
 /**
  * main - Entry point
- * Description: print digits from 0 to 9 
- * Return: o (success)
+ * Description: print digits from 0 to 9
+ * Return: 0 (success)* 
  */
 int main(void)
 {
