@@ -1,1 +1,1 @@
-more c-pointers amd array 
+more c-pointers and array 
