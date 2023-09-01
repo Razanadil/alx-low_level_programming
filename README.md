@@ -1,1 +1,1 @@
- learning C if ,while ,for 
+more c-pointers
