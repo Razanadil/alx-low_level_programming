@@ -2,51 +2,39 @@
 #include <stdlib.h>
 
 /**
- * strlen - find length of string
- *  
- * @*s: string 
- *  
- * Return: size
- *  
- */
-int _strlen(char *s)
-{
-	int size = 0;
-	for (; s[size] != '\0'; size++);
-       return (size)
-       }
-/**
- * str_concat - concatenates two strings
+ * alloc_grid - create 2 dimensional array of integrers
  *
- * @s1: string one
- * @s2: string two
+ * @width: width of the array
+ * @height: height of the array
  *
- * Return: pointer to newly allocated space in memory with content s! and s2
+ * Return: pointer to 2 dimensional array of integers
  * NULL on failure
+ * NULL if height or width is 0 or negative
  *
  */
-char *str_concat(char *s1, char *s2)
+int **alloc_grid(int width, int height)
 {
-	int size1;
-       int size2;
-int i;
-char *a;
-if (s1 == 0)
-      s1 = "\0";
-if (s2 == 0)
-	s2 = "\0";
-size1 = _strlen(s1);
-size2 = _strlen(s2);
-a = malloc((size1 + size2) * sizeof(char) + 1);
-if (a == 0)
-	return (0);
-for (i = 0; i <= size1; i++)
-{
-if (i < size1)
-a[i] = s1[i];
-else
-	a[i] = s2[i - size1];
-}
-a[i] = '\0';
-return (a);
+	int **matrix, x, y;
+
+	if (width <= 0 || height <= 0)
+		return (NULL);
+	matrix = (int **)malloc(sizeof(int *) * height);
+		if (matrix == NULL)
+			return (NULL);
+	for (x = 0; x < height; ++x)
+	{
+		matrix[x] = (int *)malloc(sizeof(int) * width);
+		if (matrix[x] == NULL)
+		{
+			for (y = 0; y < x; ++y)
+				free(matrix[y]);
+			free(matrix);
+			return (NULL);
+		}
+		for (y = 0; y < width; ++y)
+		{
+			matrix[x][y] = 0;
+		}
+	}
+	return (matrix);
 }
