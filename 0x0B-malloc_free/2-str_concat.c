@@ -32,9 +32,9 @@ char *str_concat(char *s1, char *s2)
 int i;
 char *a;
 if (s1 == 0)
-      s1 = "\0";
+      size1 = "\0";
 if (s2 == 0)
-        s2 = "\0";
+        size2 = "\0";
 size1 = _strlen(s1);
 size2 = _strlen(s2);
 a = malloc((size1 + size2) * sizeof(char) + 1);
