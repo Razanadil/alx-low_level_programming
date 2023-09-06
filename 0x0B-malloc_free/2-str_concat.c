@@ -25,7 +25,7 @@ int _strlen(char *s)
  * NULL on failure
  *
  */
-char *_strconcat(char *s1, char *s2)
+char *str_concat(char *s1, char *s2)
 {
         int size1;
        int size2;
