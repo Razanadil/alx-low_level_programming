@@ -2,17 +2,14 @@
 #include <stdlib.h>
 
 /**
- * strlen - find length of string
- *  
- * @*s: string 
- *  
- * Return: size
- *  
- */
+*_strlen - find length of string
+*@s: string print the size  
+*return: int-size
+*/
 int _strlen(char *s)
 {
 int size = 0;
-for (; s[size] != '\0'; size++);
+for (; s[size] != '\0'; size++)
 return (size);
 }
 /**
